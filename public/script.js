@@ -1,9 +1,9 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-  path:'/peerjs',                               //is tis line necessary  
-  host: '/',
-  port: '3001'
+//   path:'/peerjs',                               //is tis line necessary  
+  host: 'https://zoomclone2008.herokuapp.com/',
+  port: 5000
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
